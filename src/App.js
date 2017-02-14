@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './MLB_Logo.jpg';
 import './App.css';
+import ShowTeams from './ShowTeams';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <h1 className="App-title">MLB Ap</h1>  
+          <img src={logo} className="App-logo" alt="logo" />   
+           
+           <h2>Test</h2>    
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Insert info about the app and what it does.
         </p>
+        <ShowTeams />
       </div>
     );
   }
