@@ -8,13 +8,11 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-        <h1 className="App-title">MLB Ap</h1>  
-          <img src={logo} className="App-logo" alt="logo" />   
-           
-           <h2>Test</h2>    
+          <img src={logo} alt="logo"/>  
+          <h1>MLB App</h1>   
         </div>
         <p className="App-intro">
-          Insert info about the app and what it does.
+          Click on each team to see their stats for the 2017 season. 
         </p>
         <ShowTeams />
       </div>

@@ -2,24 +2,16 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 80px;
-  padding-right: 300px;
-}
-
-.App-header {
-  background-color: darkblue;
-  height: 70px;
-  padding: 20px;
-}
-
-/*.App-header h1 {
+.App-header h1 {
+    position: relative;
+    padding: 10px;
+    height: 70px;
     color: black;
-    padding-bottom: 200px;
-  }
-*/
+}
 
-.App-title {
+
+.App-header img {
+    float: left;
     color: black;
     height: 80px;
 }

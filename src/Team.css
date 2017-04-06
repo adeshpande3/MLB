@@ -1,0 +1,10 @@
+.TeamPicture {
+  float: left;
+}
+
+.TeamStats{
+	font-size: 20px;
+	position: absolute;
+	top: 400px;
+	left: 550px;
+}
