@@ -1,18 +1,31 @@
 .TeamPicture {
   float: left;
   background-color: white;
-   display: inline-block;
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 15px;
+  left: 40px;
 }
 
 .TeamPicture img:hover {
 	opacity: .5;
 }
 
+.TeamPictureHighlighted {
+	float: left;
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
+    left: 40px;
+    -webkit-filter: sepia(100%); filter: sepia(100%);
+}
+
 .TeamStats{
-	font-size: 20px;
+	font-size: 10px;
 	position: absolute;
-	top: 400px;
-	left: 550px;
+	top: 600px;
+	left: 150px;
+	right: 150px;
 }
 
 .Loading{
