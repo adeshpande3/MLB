@@ -1,5 +1,11 @@
 .TeamPicture {
   float: left;
+  background-color: white;
+   display: inline-block;
+}
+
+.TeamPicture img:hover {
+	opacity: .5;
 }
 
 .TeamStats{
@@ -7,4 +13,8 @@
 	position: absolute;
 	top: 400px;
 	left: 550px;
+}
+
+.Loading{
+	float:left;
 }
