@@ -2,9 +2,6 @@
   float: left;
   background-color: white;
   display: inline-block;
-  margin-right: 15px;
-  margin-left: 15px;
-  left: 40px;
 }
 
 .TeamPicture img:hover {
@@ -14,20 +11,25 @@
 .TeamPictureHighlighted {
 	float: left;
     display: inline-block;
-    margin-right: 15px;
-    margin-left: 15px;
-    left: 40px;
     -webkit-filter: sepia(100%); filter: sepia(100%);
 }
 
 .TeamStats{
-	font-size: 10px;
+	font-size: 15px;
 	position: absolute;
-	top: 600px;
+	top: 350px;
 	left: 150px;
-	right: 150px;
 }
 
 .Loading{
 	float:left;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 400px;
 }

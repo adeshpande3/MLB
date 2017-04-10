@@ -15,11 +15,11 @@ export default class ShowWordVectors extends Component {
   				'cin', 'col', 'lad', 'mia', 'mil', 'nym', 'phi', 'pit', 'sd', 
   				'sf', 'stl', 'wsh']
   	var numTeams = teams.length
-  	var arrImg = []
-  	for (var i = 0; i < numTeams; i++){
-  		var fullURL = baseURL + teams[i] + endURL
-  		arrImg.push(<Team url = {fullURL} teamName = {teams[i]} />)
-  	}
+  	const arrImg = teams.map(function(team) {
+  		var fullURL = baseURL + team + endURL
+  		return <Team url={fullURL} teamName={team} key={team} />
+  	});
+  	
     return (
     <body>
       <div className="ShowTeams">
