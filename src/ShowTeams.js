@@ -5,6 +5,9 @@ import Team from './Team';
 export default class ShowWordVectors extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+			  showFirstTeamData: '',
+			  showSecondTeamData: ''}
   }
 
   render() {

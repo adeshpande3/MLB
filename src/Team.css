@@ -14,11 +14,18 @@
     -webkit-filter: sepia(100%); filter: sepia(100%);
 }
 
-.TeamStats{
+.FirstTeamStats{
 	font-size: 15px;
 	position: absolute;
 	top: 350px;
 	left: 150px;
+}
+
+.SecondTeamStats{
+	font-size: 15px;
+	position: absolute;
+	top: 350px;
+	right: 150px;
 }
 
 .Loading{
@@ -29,7 +36,8 @@ table, th, td {
     border: 1px solid black;
 }
 
-table {
-    border-collapse: collapse;
+
+.teamTable {
+	border-collapse: collapse;
     width: 400px;
 }

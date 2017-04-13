@@ -27,19 +27,14 @@ export default class Team extends Component {
 	//);
     this.state = {text: '',
 				  numberOfClicks: 0,
-				  teamData: <table>{listTeamData}</table>,
-				  showTeamData: '',
+				  teamData: <table className="teamTable">{listTeamData}</table>,
+				  showFirstTeamData: '',
+				  showSecondTeamData: '',
 				  animation: '',
-				  image: '',
-				  date: ''}
+				  image: '',}
   }
 
   componentDidMount() {
-  	var today = new Date();
-	var dd = today.getDate();
-	var mm = today.getMonth()+1; 
-	var yyyy = today.getFullYear();
-	var wholeDate = yyyy.toString() + mm.toString() + dd.toString();
   	this.setState({image: 
   		<div className="TeamPicture">
 		    <img src={this.props.url} alt={this.props.teamName} 
@@ -70,7 +65,6 @@ export default class Team extends Component {
   	if (this.state.numberOfClicks == 0){
   		this.showAnimation()
   		this.highlightImage()
-  		var that = this;
 
   		//Tried to get MLB data in JSON form from the mySportsFeed website
   		//but ended up just using local JSON files
@@ -86,15 +80,17 @@ export default class Team extends Component {
 	    //});
 
 
-	    this.setState({showTeamData: this.state.teamData})
-	    this.setState({animation: ''})
-  		this.setState({text: this.props.teamName})
-  		this.setState({numberOfClicks: 1})
+	    this.setState({showFirstTeamData: this.state.teamData, 
+	    			   showSecondTeamData: this.state.teamData, 
+	    			   animation: '',
+	    			   text: this.props.teamName,
+	    			   numberOfClicks: 1})
   	} else{
   		this.unhighlightImage()
-  		this.setState({text: ''})
-  		this.setState({numberOfClicks: 0})
-  		this.setState({showTeamData: ''})
+  		this.setState({text: '',
+  					   numberOfClicks: 0,
+  					   showFirstTeamData: '',
+  					   showSecondTeamData: ''})
   	}
   }
 
@@ -103,9 +99,11 @@ export default class Team extends Component {
     	<div>
 	    	{this.state.image}
 		    {this.state.animation}
-	    	<div className = "TeamStats">
-	    		{this.state.showTeamData}
-		    	{this.state.date}
+	    	<div className = "FirstTeamStats">
+	    		{this.state.showFirstTeamData}
+		    </div>
+	    	<div className = "SecondTeamStats">
+	    		{this.state.showSecondTeamData}
 		    </div>
 	    </div>
     );
