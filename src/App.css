@@ -1,10 +1,7 @@
-.App {
-  text-align: center;
-}
-
-.App-header h1 {
-    position: relative;
-    padding: 10px;
+.App h1 {
+	text-align: center;
+    padding: 15px;
+    padding-right: 120px;
     height: 70px;
     color: black;
 }
@@ -14,9 +11,14 @@
     float: left;
     color: black;
     height: 80px;
+    padding-left: 30px;
+
+
 }
 
 .App-intro {
+	text-align: center;
   font-size: large;
+  padding-bottom: 30px;
 }
 

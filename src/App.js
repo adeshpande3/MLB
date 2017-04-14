@@ -9,8 +9,9 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} alt="logo"/>  
+      </div>
           <h1>MLB App</h1>   
-        </div>
+        
         <p className="App-intro">
           Click on each team to see their stats for the 2016 season. 
         </p>

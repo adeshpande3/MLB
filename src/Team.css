@@ -14,18 +14,30 @@
     -webkit-filter: sepia(100%); filter: sepia(100%);
 }
 
-.FirstTeamStats{
+.PitchingStats{
 	font-size: 15px;
 	position: absolute;
-	top: 350px;
-	left: 150px;
+	top: 450px;
+	left: 250px;
 }
 
-.SecondTeamStats{
+.PitchingStats h1{
+	position: absolute;
+	top: -90px;
+	left: 120px;
+}
+
+.BattingStats{
 	font-size: 15px;
 	position: absolute;
-	top: 350px;
-	right: 150px;
+	top: 450px;
+	right: 250px;
+}
+
+.BattingStats h1{
+	position: absolute;
+	top: -90px;
+	left: 170px;
 }
 
 .Loading{
