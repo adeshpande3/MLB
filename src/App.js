@@ -13,7 +13,7 @@ class App extends Component {
           <h1>MLB App</h1>   
         
         <p className="App-intro">
-          Click on each team to see their stats for the 2016 season. 
+          Click on each team to see their stats for the 2016 regular season. 
         </p>
         <ShowTeams />
       </div>
