@@ -3,7 +3,6 @@ import './Team.css';
 import loading from './loading-bubbles.svg';
 var pitchingData = require('./Pitching.json');
 var battingData = require('./Batting.json');
-import $ from 'jquery';
 
 export default class Team extends Component {
   constructor(props) {
